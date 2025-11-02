@@ -1,13 +1,19 @@
+// === Referencias DOM ===
 const lblOn      = document.querySelector('#lblOn');
 const lblOff     = document.querySelector('#lblOff');
 const txtMensaje = document.querySelector('#txtMensaje');
 const btnEnviar  = document.querySelector('#btnEnviar');
 const ulMessages = document.querySelector('#messages');
 
+// === Parámetros de conexión ===
+const wsHost = '127.0.0.1';
+const wsPort = '8080';
+const apiPort = '8000';
+
 // Configuración Pusher para Reverb
 const pusher = new Pusher('local-app-key', {
-    wsHost: '127.0.0.1',
-    wsPort: 8080,
+    wsHost: wsHost,
+    wsPort: wsPort,
     forceTLS: false,
     enabledTransports: ['ws'],
     cluster: 'mt1',
@@ -69,7 +75,10 @@ btnEnviar.addEventListener('click', () => {
         timestamp: new Date().toISOString(),
     };
 
-    fetch('http://127.0.0.1:8000/api/chat/send', {
+    // Usamos wsHost para construir la URL dinámicamente
+    const url = `http://${wsHost}:${apiPort}/api/chat/send`;
+
+    fetch(url, {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json',

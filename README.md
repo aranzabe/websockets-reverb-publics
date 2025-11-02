@@ -1,3 +1,20 @@
+# Websockets canales públicos
+
+Recuerda que para que funcione el ejemplo, una vez realizado el pull deberás realizar (dentro de la carpeta del proyecto) un:
+````
+composer update 
+````
+Tendremos que regenerar la key del proyecto con:
+````
+cp .env.example .env           
+php artisan key:generate
+````
+También tienes una base de datos y una colección de peticiones Postman, exportadas en la carpeta del proyecto.
+
+# 📘 **Apuntes de Eloquent ORM – Laravel 12**
+
+---
+
 
 
 ## 📖 1. Conceptos Previos
@@ -43,11 +60,11 @@ php artisan install:broadcasting
 
 Cuando pregunte el driver, elige **Reverb:**
 
-![image.png](attachment:8eaa07b2-86ea-4989-8111-a7e180f62fd1:image.png)
+![image.png](9.-%20Websockets-reverb-publicos/image.png)
 
 Instalamos las dependencias:
 
-![image.png](attachment:b874e4f8-0cd8-4d95-ab9c-4b6a333c1cf6:image.png)
+![image.png](9.-%20Websockets-reverb-publicos/image%201.png)
 
 Esto configura automáticamente:
 
