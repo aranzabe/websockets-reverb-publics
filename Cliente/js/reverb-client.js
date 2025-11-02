@@ -51,8 +51,8 @@ pusher.connection.bind('error', (err) => {
         console.warn('⚠️ Conexión perdida con Reverb');
     } else {
         console.error('⚠️ Error WebSocket:', err);
-        setOffline();
     }
+    setOffline();
 });
 
 // ======== Recepción de mensajes en tiempo real ========
