@@ -9,9 +9,7 @@ Tendremos que regenerar la key del proyecto con:
 cp .env.example .env           
 php artisan key:generate
 ````
-También tienes una base de datos y una colección de peticiones Postman, exportadas en la carpeta del proyecto.
 
-# 📘 **Apuntes de Eloquent ORM – Laravel 12**
 
 ---
 
