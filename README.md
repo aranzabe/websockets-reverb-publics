@@ -467,7 +467,7 @@ php -S 127.0.0.1:9090
 
 ## 🧩 11. Prueba final
 
-- Abre `http://127.0.0.1:9090` en dos navegadores distintos (o ventanas privadas).
+- Abre `http://127.0.0.1:9090` en dos navegadores distintos (o ventanas privadas). También puedes levantar dos o tres clientes en diferentes puertos: `http://127.0.0.1:9091`; `http://127.0.0.1:9092`...
 - Escribe un mensaje en uno y observa cómo **aparece instantáneamente en ambos**.
 
 ---
